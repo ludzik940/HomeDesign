@@ -1,0 +1,473 @@
+/* ! FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Hubballi&family=Lato:ital,wght@0,100;1,100;1,300&family=Pacifico&display=swap');
+
+.flex-box {
+    display: flex;
+}
+.sidenav {
+    display: none;
+}
+* {
+    margin: 0 auto;
+    font-family: 'Hubballi', cursive;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+/* ? HEADER */
+
+header {
+    width:70%;
+}
+
+.social-bar {
+    display: flex;
+}
+.social-bar > * {
+    padding: 10px;
+    text-align: center;
+}
+
+.icons {
+    flex-basis: 15%;
+}
+
+.social-bar > * > i {
+    padding:5px;
+    font-size: 16px;
+}
+
+.empty {
+    flex-basis: 50%;
+}
+
+.tel-mail {
+    flex-basis: 40%;
+    text-align: right;
+}
+
+.tel-mail > * {
+    padding:5px;
+}
+
+.logo-text {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+/* ? ########## HEADER MENU ############## */
+
+.menu  {
+    text-align: center;
+    margin: 25px 0;
+}
+.menu > li {
+    padding:20px;
+    display: inline;
+    text-align: center;
+}
+
+.menu > li > a {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Amatic SC', cursive;
+}
+/* *  ############### WELCOME IMAGE ################ */
+
+.img-box {
+    padding-top: 25px;
+    height:75vh;
+    background: url('./img/wlc-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-box {
+    width: 100%;
+    background: #FDF9F9;
+}
+
+.text-box-small {
+    font-size: 18px;
+    width:35%;
+    padding:35px;
+    text-align: center;
+}
+
+.text-box-small > p > span {
+    font-size: 28px;
+    margin-left: -10px;
+    letter-spacing: 0.2rem;
+    text-decoration: underline #A87650;
+}
+
+
+/* ? ########### PROJECTS SECTION ############# */
+
+.portfolio {
+    padding: 50px;
+    text-align: center;
+    height: 130vh;
+}
+
+.portfolio-container {
+    width:90%;
+    height: 100%;
+    padding: 25px;;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+      "work-one work-two work-three"
+      "work-four work-four work-three"
+      "work-four work-four work-five"
+      "work-six work-six work-six"
+      "work-six work-six work-six";
+  }
+
+  .portfolio-container > * {
+      height: 100%;
+      width: 100%;
+      transition: transform 0.3s;
+  }
+
+  .portfolio-container > *:hover {
+    transform: scale(1.01);
+  }
+  
+  .work-one { grid-area: work-one; 
+    background:url('./img/img-portfolio/port-one.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  .work-two { grid-area: work-two; 
+    background:url('./img/img-portfolio/port-three.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  .work-four { grid-area: work-four; 
+    background:url('./img/img-portfolio/port-four.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
+  
+  .work-three { grid-area: work-three;
+    background:url('./img/img-portfolio/port-five.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+  
+  .work-five { grid-area: work-five; 
+    background:url('./img/img-portfolio/port-six.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  .work-six { grid-area: work-six; 
+    background:url('./img/img-portfolio/port-two.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+
+
+/* ! ######### BLOG ######## */
+
+.blog-title {
+    padding:25px;
+    text-decoration: underline #A87650;
+}
+
+.blog-container { 
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "post-one post-two post-three";
+    width:60%;
+  }
+
+.post > * > img {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+  
+.post-one { 
+      grid-area: post-one; 
+}
+  
+.post-two { 
+      grid-area: post-two; 
+}
+  
+.post-three { 
+      grid-area: post-three; 
+}
+
+.title-box {
+    border-radius: 3px;
+    width:90%;
+    background:#FFF;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: -30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: thin;
+    margin-bottom: 25px;
+}
+
+.title-box > * {
+    padding:10px;
+}
+.date {
+    text-align: left !important;
+    width:100%;
+}
+
+.blog-post-info {
+    font-size: 14px;
+}
+
+.read-more, .btn{
+	background-color:#faf7f7;
+	border-radius:3px;
+    border:none;
+	display:inline-block;
+	padding:14px 42px;
+    font-size: 15px;
+	text-decoration:none;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.read-more:hover, .btn:hover {
+	background-color:#f6f6f6;
+}
+.read-more:active, .btn:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-container {
+    padding-top:25px;
+    width:100%;
+    text-align: center;
+}
+.visit-btn {
+    text-align: center;
+	padding:18px 96px;
+    font-size: 18px;
+}
+
+
+/* * ########## IG FOLLOW ########## */
+.follow-ig {
+    text-align: center;
+    padding-top: 65px;
+    width:60%;
+}
+
+.text-ig {
+    padding-top: 20px;
+    flex-basis: 23%;
+    font-size: 22px;
+}
+.vertical-line {
+    border: 1px solid black;
+    margin: -25px 0;
+}
+
+.ig-posts {
+    display: flex;
+}
+
+.ig-img > img {
+    flex-basis: 25%;
+    width: 225px;
+    padding:10px;
+    transition: transform 0.3s;
+}
+
+.ig-img > img:hover {
+    transform: scale(1.01);
+}
+
+
+/* ? FOOTER */
+footer {
+    margin-top: 50px;
+    background:#F6F6F6;
+}
+
+.footer-container {
+    padding-top: 50px;
+    width: 70%;
+}
+
+.icons-footer {
+    border-bottom: 1px solid black;
+    text-align: center;
+    background-color: #fff;
+}
+
+.icons-footer > * {
+    padding: 10px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+}
+
+.map > a {
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.copyright > p > a {
+    color: black;
+    /* text-decoration: none; */
+}
+
+
+
+
+/* TODO MEDIA BREAKPOINTS */
+
+ @media screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    * {
+         margin: 0 auto;
+         box-sizing: border-box;
+     }
+    .mobile-hide {
+        display: none;
+    }
+
+    .open-menu {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .line {
+        width: 18px;
+        height: 2px;
+        background: black;
+        margin:3px;
+    }
+
+
+    .sidenav {
+        text-align: center;
+        height: 100%;
+        width: 0; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0; 
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden; 
+        padding-top: 60px;
+        transition: 0.5s; 
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      .closebtn {
+          color: white;
+          text-align: center;
+      }
+
+
+/* home-img ##### */
+
+.text-box-small {
+    width: 70%;
+}
+
+/* PORTFOLIO ##### */
+.portfolio {
+    padding: 0;
+}
+.portfolio-container {
+    width:90%;
+    height: 100%;
+    padding: 25px;;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 10px 10px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+      "work-one"
+      "work-two"
+      "work-three"
+      "work-four"
+      "work-five"
+      "work-six"
+  }
+/* ##### BLOG ###### */
+
+.blog-container {
+    display: block;
+}
+
+/* HIDE IG */
+
+.follow-ig {
+    display: none;
+}
+
+/* FOOTER FLEX */
+
+.flex-box {
+    flex-direction: column;
+}
+
+}

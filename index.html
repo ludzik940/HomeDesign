@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOVER EFFECT -->
+    <link rel="stylesheet" href="./hover-effect/hover.min.css">
+
+    <script src="app.js"></script>
+    <title>HOME DESIGN</title>
+</head>
+<body>
+    <header>
+        <div class="social-bar mobile-hide">
+            <div class="icons">
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="empty"></div>
+            <div class="tel-mail">
+                <i class="fa-solid fa-mobile-screen-button"></i><span>+4812312412</span> 
+                <i class="fa-solid fa-at"></i><span>homedesign@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="logo-box">
+            <h2 class="logo-text">Home Design</h2>
+        </div>
+
+        <div class="header-menu mobile-hide">
+            <ul class="menu">
+                <li><a href="#" class="hvr-underline-from-center">HOME</a></li>
+                <li><a href="#" class="hvr-underline-from-center">PORTFOLIO</a></li>
+                <li><a href="#" class="hvr-underline-from-center">OUR COMPANY</a></li>
+                <li><a href="#" class="hvr-underline-from-center">BLOG</a></li>
+                <li><a href="#" class="hvr-underline-from-center">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="hvr-underline-from-center">HOME</a>
+            <a href="#" class="hvr-underline-from-center">PORTFOLIO</a>
+            <a href="#" class="hvr-underline-from-center">OUR COMPANY</a>
+            <a href="#" class="hvr-underline-from-center">BLOG</a>
+            <a href="#" class="hvr-underline-from-center">CONTACT US</a>
+            <a href="#" onclick="closeNav()" class="closebtn"> &times;</a>
+        </div>
+          
+        <span onclick="openNav()" class="open-menu" id="open">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </span>
+        
+    </header>
+    
+
+    <section class="home-img">
+        <div class="img-box"></div>
+        <div class="img-text-box">
+            <div class="text-box-small">
+                <p> <span class="logo-text">HOME DESIGN</span> IS A "WHOLISTIC" STUDIO, SPECIALIZING IN RESIDENTIAL BUILDING DESIGN AND INTERIORS. FROM FOUNDATION TO FURNISHINGS, EVERYTHING WE DO, WE DO FOR THE LOVE OF HOME.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <div class="work-one"></div>
+            <div class="work-two"></div>
+            <div class="work-four"></div>
+            <div class="work-three"></div>
+            <div class="work-five"></div>
+            <div class="work-six"></div>
+        </div>
+      
+    </section>
+
+    <section class="blog" id="blog">
+        <h2 class="logo-text blog-title">Blog</h2>
+
+        <div class="blog-container">
+            <div class="post-one post">
+                <div class="blog-img">
+                    <img src="https://cdn-bhnll.nitrocdn.com/gSDMXibcJluvzIippFBvhCZIaoOxCvih/assets/static/optimized/rev-aa72251/wp-content/uploads/residential-architect-laura-umansky.png" alt="">
+                </div>
+                <div class="title-box">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p class="date"><i class="fa-regular fa-calendar-check"></i> March 02,2022</p>
+                    <p class="blog-post-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim libero sint animi ea tenetur maxime facere voluptatibus velit consectetur eaque.</p>
+                    <button class="read-more">READ MORE </button>
+                </div>
+            </div>
+            <div class="post-two post">
+                <div class="blog-img">
+                    <img src="https://cdn-bhnll.nitrocdn.com/gSDMXibcJluvzIippFBvhCZIaoOxCvih/assets/static/optimized/rev-aa72251/wp-content/uploads/best-office-chairs_laura-u.png" alt="">
+                </div>
+                <div class="title-box">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p class="date"><i class="fa-regular fa-calendar-check"></i> March 02,2022</p>
+                    <p class="blog-post-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim libero sint animi ea tenetur maxime facere voluptatibus velit consectetur eaque.</p>
+                    <button class="read-more">READ MORE </button>
+                </div>
+            </div>
+            <div class="post-three post">
+                <div class="blog-img">
+                    <img src="https://cdn-bhnll.nitrocdn.com/gSDMXibcJluvzIippFBvhCZIaoOxCvih/assets/static/optimized/rev-aa72251/wp-content/uploads/residential-architect-laura-umansky.png" alt="">
+                </div>
+                <div class="title-box">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p class="date"><i class="fa-regular fa-calendar-check"></i> March 02,2022</p>
+                    <p class="blog-post-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim libero sint animi ea tenetur maxime facere voluptatibus velit consectetur eaque.</p>
+                    <button class="read-more btn">READ MORE </button>
+                </div>
+            </div>
+        </div>
+            <div class="btn-container">
+                <button class="visit-btn btn">Visit our blog</button>
+            </div>
+    </section>
+
+    <div class="follow-ig">
+        <div class="flex-box">
+            <div class="text-ig">
+                <h2>Follow us<br> on<br> Instagram</h2>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="ig-posts">
+                <div class="ig-img">
+                    <img src="./img/img-ig/ig-one.jpeg" alt="">
+                </div>
+                <div class="ig-img">
+                    <img src="./img/img-ig/ig-two.jpeg" alt="">
+                </div>
+                <div class="ig-img">
+                    <img src="./img/img-ig/ig-three.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container flex-box">
+            <div class="social">
+                <div class="icons icons-footer">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h2 class="logo-text">Home Design</h2> 
+            </div>
+            <div class="map-one map">
+                <a href="#">HOME</a>   
+                <a href="#">OUR TEAM</a>
+                <a href="#">BLOG</a>
+            </div>
+            <div class="map-two map">
+                <a href="#">PORTFOLIO</a>
+                <a href="#">PRESS</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright Dominik 2022, <a href="#">TERMS & PRIVACY POLICY.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
