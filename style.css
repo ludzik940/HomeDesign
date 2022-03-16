@@ -458,6 +458,18 @@ footer {
     display: block;
 }
 
+.blog-img {
+    height: 300px;
+}
+
+.title-box {
+    height: 300px;
+    margin-top: 75px;
+    background: #fcfcfc;
+}
+
+
+
 /* HIDE IG */
 
 .follow-ig {
