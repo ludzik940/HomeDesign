@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOVER EFFECT -->
+    <link rel="stylesheet" href="./hover-effect/hover.min.css">
+
+    <script src="app.js"></script>
+    <title>HOME DESIGN</title>
+</head>
+<body>
+    <header>
+        <div class="social-bar mobile-hide">
+            <div class="icons">
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="empty"></div>
+            <div class="tel-mail">
+                <i class="fa-solid fa-mobile-screen-button"></i><span>+4812312412</span> 
+                <i class="fa-solid fa-at"></i><span>homedesign@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="logo-box">
+            <h2 class="logo-text">Home Design</h2>
+        </div>
+
+        <div class="header-menu mobile-hide">
+            <ul class="menu">
+                <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+                <li><a href="portfolio.html" class="hvr-underline-from-center">PORTFOLIO</a></li>
+                <li><a href="company.html" class="hvr-underline-from-center">OUR COMPANY</a></li>
+                <li><a href="#" class="hvr-underline-from-center">BLOG</a></li>
+                <li><a href="#" class="hvr-underline-from-center">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="hvr-underline-from-center">HOME</a>
+            <a href="#" class="hvr-underline-from-center">PORTFOLIO</a>
+            <a href="#" class="hvr-underline-from-center">OUR COMPANY</a>
+            <a href="#" class="hvr-underline-from-center">BLOG</a>
+            <a href="#" class="hvr-underline-from-center">CONTACT US</a>
+            <a href="#" onclick="closeNav()" class="closebtn"> &times;</a>
+        </div>
+          
+        <span onclick="openNav()" class="open-menu" id="open">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </span>
+        
+    </header>
+
+
+    <section class="home-img">
+        <div class="img-box-portfolio"></div>
+    </section>
+    
+    <section class="portfolio-page">
+        <div class="portfolio-title">
+            <h2>Our Work</h2>
+            <div class="horizontal-line"></div>
+            <div class="text-wrapper">
+                <p>As a full-service firm specializing in both residential building and interior design, we address every stage of your new construction home design project from foundation to furnishings. We provide an unparalleled experience that begins with a sketch and results in a beautifully curated custom home that supports how you love to live.</p>
+            </div>
+            
+            <br>
+            <p>Below are a few select projects that we currently have on our boards.</p>
+        </div>
+
+        <div class="container-portfolio">
+            <img src="./img/img-portfolio-page/portfolio1.webp" alt="project">
+            <img src="./img/img-portfolio-page/portfolio2.webp" alt="project">
+            <img src="./img/img-portfolio-page/portfolio3.webp" alt="project">
+            <img src="./img/img-portfolio-page/portfolio4.webp" alt="project">
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="footer-container flex-box">
+            <div class="social">
+                <div class="icons icons-footer">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h2 class="logo-text">Home Design</h2> 
+            </div>
+            <div class="map-one map">
+                <a href="#">HOME</a>   
+                <a href="#">OUR TEAM</a>
+                <a href="#">BLOG</a>
+            </div>
+            <div class="map-two map">
+                <a href="#">PORTFOLIO</a>
+                <a href="#">PRESS</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright Dominik 2022, <a href="#">TERMS & PRIVACY POLICY.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

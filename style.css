@@ -364,6 +364,43 @@ footer {
 
 
 
+/* ! ############## PORTFOLIO PAGE ################### */
+
+.portfolio-page {
+    width: 80%;
+    text-align: center;
+}
+
+.img-box-portfolio {
+    background: url('./img/img-portfolio-page/portfolio-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+.portfolio-title > h2, .title {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.horizontal-line {
+    width: 100px;
+    height: 2px;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.text-wrapper {
+    width: 60%;
+    padding: 25px;
+    font-size: 14px;
+}
+
+
 
 /* TODO MEDIA BREAKPOINTS */
 
@@ -374,6 +411,13 @@ footer {
     * {
          margin: 0 auto;
          box-sizing: border-box;
+     }
+
+     .logo-text {
+         padding: 30px;
+     }
+     .img-box {
+         height: 55vh;
      }
     .mobile-hide {
         display: none;
