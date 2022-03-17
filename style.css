@@ -4,14 +4,13 @@
 .flex-box {
     display: flex;
 }
-.sidenav {
-    display: none;
-}
 * {
     margin: 0 auto;
     font-family: 'Hubballi', cursive;
 }
-
+.sidenav {
+    display: none;
+}
 body {
     box-sizing: border-box;
 }
@@ -341,6 +340,7 @@ footer {
 .map {
     display: flex;
     flex-direction: column;
+    /* border-left: 1px solid black; */
 }
 
 .map > a {
@@ -440,6 +440,7 @@ footer {
 
 
     .sidenav {
+        display: block;
         text-align: center;
         height: 100%;
         width: 0; 
@@ -527,4 +528,42 @@ footer {
     flex-direction: column;
 }
 
+
+/*  * ####### PORTFOLIO PAGE ####### */
+
+.container-portfolio > img {
+    width: 400px;
+    margin-left: -50px;
+
+}
+
+.img-box-portfolio {
+    height: 35vh;
+}
+
+.portfolio-title > h2, .title {
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.horizontal-line {
+    width: 100px;
+    height: 2px;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.text-wrapper {
+    width: 90%;
+    padding: 25px;
+    font-size: 14px;
+}
+
+.portfolio-title > p {
+    font-size: 12px;
+}
 }
