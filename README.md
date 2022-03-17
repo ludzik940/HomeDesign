@@ -1,4 +1,4 @@
 # HomeDesign
-## Simple Website done just by using HTML & CSS. Mobile friendly.
+##### Simple Website done just by using HTML & CSS. Mobile friendly.
 
-![Website Screenshoot](![This is an image](https://myoctocat.com/assets/images/base-octocat.svg))
+![Website Screenshoot](https://ibb.co/4Vd9QH0)
