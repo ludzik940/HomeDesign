@@ -1,4 +1,4 @@
 # HomeDesign
 ##### Simple Website done just by using HTML & CSS. Mobile friendly.
 
-![Website Screenshoot](https://ibb.co/4Vd9QH0)
+![Website Screenshoot](https://i.ibb.co/crLMmjs/ludzik940-github-io-Home-Design.png)
