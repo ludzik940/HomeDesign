@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOVER EFFECT -->
+    <link rel="stylesheet" href="./hover-effect/hover.min.css">
+
+    <script src="app.js"></script>
+    <title>HOME DESIGN</title>
+</head>
+<body>
+    <header>
+        <div class="social-bar mobile-hide">
+            <div class="icons">
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="empty"></div>
+            <div class="tel-mail">
+                <i class="fa-solid fa-mobile-screen-button"></i><span>+4812312412</span> 
+                <i class="fa-solid fa-at"></i><span>homedesign@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="logo-box">
+            <h2 class="logo-text">Home Design</h2>
+        </div>
+
+        <div class="header-menu mobile-hide">
+            <ul class="menu">
+                <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+                <li><a href="portfolio.html" class="hvr-underline-from-center">PORTFOLIO</a></li>
+                <li><a href="company.html" class="hvr-underline-from-center">OUR COMPANY</a></li>
+                <li><a href="#" class="hvr-underline-from-center">BLOG</a></li>
+                <li><a href="#" class="hvr-underline-from-center">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="hvr-underline-from-center">HOME</a>
+            <a href="#" class="hvr-underline-from-center">PORTFOLIO</a>
+            <a href="#" class="hvr-underline-from-center">OUR COMPANY</a>
+            <a href="#" class="hvr-underline-from-center">BLOG</a>
+            <a href="#" class="hvr-underline-from-center">CONTACT US</a>
+            <a href="#" onclick="closeNav()" class="closebtn"> &times;</a>
+        </div>
+          
+        <span onclick="openNav()" class="open-menu" id="open">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </span>
+        
+    </header>
+    
+
+    <section class="home-img">
+        <div class="img-box-contact">
+            <!-- Zdjęcie autorstwa Maksim Goncharenok z Pexels -->
+        </div>
+    </section>
+
+    <div class="contact-page">
+        <div class="contact-title">
+            <h2 class="logo-text">CONTACT US</h2>
+        </div>
+        <form>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fname" name="fullname" placeholder="Your Full Name..">
+        
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Your Email Address">
+        
+            <label for="msg">Message</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+          
+            <button type="submit" id="submit" name="submit">Send</button>
+          </form>
+    </div>
+
+    <footer>
+        <div class="footer-container flex-box">
+            <div class="social">
+                <div class="icons icons-footer">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h2 class="logo-text">Home Design</h2> 
+            </div>
+            <div class="map-one map">
+                <a href="#">HOME</a>   
+                <a href="#">OUR TEAM</a>
+                <a href="#">BLOG</a>
+            </div>
+            <div class="map-two map">
+                <a href="#">PORTFOLIO</a>
+                <a href="#">PRESS</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright Dominik 2022, <a href="#">TERMS & PRIVACY POLICY.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

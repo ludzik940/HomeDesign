@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOVER EFFECT -->
+    <link rel="stylesheet" href="./hover-effect/hover.min.css">
+
+    <script src="app.js"></script>
+    <title>HOME DESIGN</title>
+</head>
+<body>
+    <header>
+        <div class="social-bar mobile-hide">
+            <div class="icons">
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="empty"></div>
+            <div class="tel-mail">
+                <i class="fa-solid fa-mobile-screen-button"></i><span>+4812312412</span> 
+                <i class="fa-solid fa-at"></i><span>homedesign@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="logo-box">
+            <h2 class="logo-text">Home Design</h2>
+        </div>
+
+        <div class="header-menu mobile-hide">
+            <ul class="menu">
+                <li><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+                <li><a href="portfolio.html" class="hvr-underline-from-center">PORTFOLIO</a></li>
+                <li><a href="company.html" class="hvr-underline-from-center">OUR COMPANY</a></li>
+                <li><a href="#" class="hvr-underline-from-center">BLOG</a></li>
+                <li><a href="#" class="hvr-underline-from-center">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="hvr-underline-from-center">HOME</a>
+            <a href="#" class="hvr-underline-from-center">PORTFOLIO</a>
+            <a href="#" class="hvr-underline-from-center">OUR COMPANY</a>
+            <a href="#" class="hvr-underline-from-center">BLOG</a>
+            <a href="#" class="hvr-underline-from-center">CONTACT US</a>
+            <a href="#" onclick="closeNav()" class="closebtn"> &times;</a>
+        </div>
+          
+        <span onclick="openNav()" class="open-menu" id="open">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </span>
+        
+    </header>
+    
+
+    <section class="home-img">
+        <div class="img-box-blog">
+            <!-- Zdjęcie autorstwa Ono Kosuki z Pexels -->
+        </div>
+    </section>
+
+
+    <section class="blog-page">
+        <h2 class="logo-text">NEWS</h2>
+
+        <div class="blog-wrapper">
+            <div class="post-wrapper flex-box">
+                <div class="post-img">
+                    <img src="./img/img-blog/blog-one.jpeg" alt="Zdjęcie autorstwa Karolina Grabowska z Pexels">
+                </div>
+                <div class="post-info" id="post-one">
+                    <h2>Overwhelmed?</h2>
+                    <span class="date">03.03.2022, 15:47 </span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure provident doloribus eaque. Atque deserunt ad corporis recusandae sed nemo nam fugit a minima. Officiis rerum blanditiis nihil repudiandae provident a, quos laborum voluptatum, molestias nesciunt inventore suscipit id facilis fuga fugit nemo dolore est. Veritatis est repellendus odit cumque, eaque distinctio quo similique quibusdam magni aspernatur! Ullam aperiam, corporis officiis iusto voluptatibus placeat. At consequatur a repellendus sed nobis reiciendis voluptate corporis illo suscipit molestiae officiis quos vitae mollitia alias porro rem obcaecati est, doloremque voluptates cum sapiente sequi. Error incidunt id omnis minus tempore inventore placeat rem! Hic mollitia sapiente cum nam asperiores quas delectus voluptatibus aliquam quam sit, eaque vitae qui, tempore, architecto molestias. Asperiores dolores, quam assumenda nostrum culpa rem in blanditiis quidem dolore
+                        <span class="dots" id="dots-one">...</span> 
+                        <span class="content-hide" id="content-one">
+                        repudiandae, hic iusto. Non, consectetur adipisci nostrum, quae debitis praesentium asperiores recusandae eius optio error at, voluptatum repellat odit voluptas pariatur fugit omnis natus! Aliquam maiores sapiente sed est rem corporis dolor! Quaerat, fugiat eos quos necessitatibus aperiam aliquam itaque. Impedit esse reiciendis earum aperiam excepturi, numquam quia? Quod vero quasi accusantium vitae, velit voluptatibus sunt blanditiis voluptates, ex architecto repellendus ullam labore quo facilis illo unde excepturi officia quae molestias nesciunt non esse necessitatibus corporis. Fuga dolorum debitis quas aperiam harum. 
+                        </span>
+                    </p>
+                    <div class="blog-button">
+                        <button class="btn-print">Print</button>
+                        <button class="btn-read" onclick="showContentOne()"> Read More...</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="post-wrapper flex-box">
+                <div class="post-img">
+                    <img src="./img/img-blog/blog-one.jpeg" alt="Zdjęcie autorstwa Karolina Grabowska z Pexels">
+                </div>
+                <div class="post-info" id="post-two">
+                    <h2>Tired?</h2>
+                    <span class="date">03.03.2022, 15:47 </span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure provident doloribus eaque. Atque deserunt ad corporis recusandae sed nemo nam fugit a minima. Officiis rerum blanditiis nihil repudiandae provident a, quos laborum voluptatum, molestias nesciunt inventore suscipit id facilis fuga fugit nam asperiores quas delectus voluptatibus aliquam quam sit, eaque vitae qui, tempore, architecto molestias. Asperiores dolores, quam assumenda nostrum culpa rem in blanditiis quidem dolore
+                        <span class="dots" id="dots-two">...</span> 
+                        <span class="content-hide" id="content-two">
+                        repudiandae, hic iusto. Non, consectetur adipisci nostrum, quae debitis praesentium asperiores recusandae eius optio error at, voluptatum repellat odit voluptas pariatur fugit omnis natus! Aliquam maiores sapiente sed est rem corporis dolor! Quaerat, fugiat eos quos necessitatibus aperiam acilis illo unde excepturi officia quae molestias nesciunt non esse necessitatibus corporis. Fuga dolorum debitis quas aperiam harum. 
+                        </span>
+                    </p>
+                    <div class="blog-button">
+                        <button class="btn-print">Print</button>
+                        <button class="btn-read" onclick="showContentTwo()">Read More...</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container flex-box">
+            <div class="social">
+                <div class="icons icons-footer">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h2 class="logo-text">Home Design</h2> 
+            </div>
+            <div class="map-one map">
+                <a href="#">HOME</a>   
+                <a href="#">OUR TEAM</a>
+                <a href="#">BLOG</a>
+            </div>
+            <div class="map-two map">
+                <a href="#">PORTFOLIO</a>
+                <a href="#">PRESS</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright Dominik 2022, <a href="#">TERMS & PRIVACY POLICY.</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

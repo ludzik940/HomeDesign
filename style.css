@@ -402,6 +402,148 @@ footer {
 }
 
 
+/* ! ######### CONTACT PAGE ###### */
+
+.img-box-contact {
+    background: url('./img/img-contact/contact-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+.contact-title > h2 {
+    padding: 25px;
+}
+.contact-page >  form > p {
+    color: #818386;
+    font-size: 24px;
+    letter-spacing: 0.01rem;
+    width: 40vw;
+    margin: 0.25rem 0;
+  }
+  
+  .contact-page > form > label, .description {
+    color:#818386;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .contact-page >  form {
+    width: 450px;
+    position: relative;
+    padding: 1rem 0;
+  }
+  
+  .contact-page > form > input, textarea, label {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 10px;
+  }
+
+
+.contact-page > form > input, textarea {
+    color: #010712;
+    font-weight: 500;
+    background:  #F6F6F6;
+    border: none;
+    border-bottom: 1px solid #818386;;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  .contact-page > form > button {
+    text-transform: uppercase;
+    font-weight: 300;
+    background:#3B3636;
+    color: #FCFDFD;
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
+
+
+  /* ! ########### BLOG PAGE ############# */
+
+  .blog-page > h2 {
+      padding: 25px;
+  }
+  .blog-wrapper {
+    width: 85vw;
+}
+
+.img-box-blog {
+    background: url('./img/img-blog/blog-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+
+  .post-wrapper {
+      border-bottom: 1px solid black;
+      padding: 25px;
+  }
+
+  .post-info {
+      width: 90%;
+      padding: 25px;
+  }
+  
+  .post-info > h2 {
+      padding: 10px;
+      font-size: 2rem;
+  }
+  .date {
+      padding: 10px;
+      text-decoration: underline 1px;
+  }
+  .post-info > p {
+      padding: 10px;
+      font-size: 1rem;
+
+  }
+
+.blog-button {
+    text-align: right;
+}
+  .btn-read, .btn-print{
+	background-color:#f5f4f4;
+	border-radius:3px;
+    border:none;
+	display:inline-block;
+	padding:14px 42px;
+    font-size: 1rem;
+	text-decoration:none;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.btn-read:hover, .btn-print:hover {
+	background-color:#f6f6f6;
+}
+.btn-read:active, .btn-print:active {
+	position:relative;
+	top:1px;
+}
+
+.red-bg {
+    background: red !important;
+}
+
+  .content-hide {
+      display: none;
+  }
+
+  .content-show {
+      display: block;
+  }
 
 /* TODO MEDIA BREAKPOINTS */
 
