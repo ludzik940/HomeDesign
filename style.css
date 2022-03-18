@@ -670,6 +670,12 @@ footer {
       "work-five"
       "work-six"
   }
+
+  /* #### TESTIMONIALS #### */
+  .testimonials {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
 /* ##### BLOG ###### */
 
 .blog-container {
