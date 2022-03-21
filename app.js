@@ -1,3 +1,25 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  let goUp = document.getElementById('go-up');
+
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    goUp.style.display = 'block';
+  } else {
+    goUp.style.display = 'none';
+  }
+
+
+  goUp.addEventListener('click', () => {
+    window.scrollTo(0,0);
+  })
+}
+
+
+
+
+
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "350px";
   }
@@ -5,6 +27,9 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+  
+
 
 
   const showContentOne = () => {
@@ -20,4 +45,7 @@ function openNav() {
     dots.classList.toggle('content-hide');
     text.classList.toggle('content-show');
   };
+
+
+
 

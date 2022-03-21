@@ -1,12 +1,22 @@
 /* ! FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Hubballi&family=Lato:ital,wght@0,100;1,100;1,300&family=Pacifico&display=swap');
 
+/* ! ARROW UP */
+    .arrow-up {
+        font-size: 24px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+
+/* #GLOBAL  */
 .flex-box {
     display: flex;
 }
 * {
     margin: 0 auto;
     font-family: 'Hubballi', cursive;
+    scroll-behavior: smooth;
 }
 .sidenav {
     display: none;
@@ -81,7 +91,7 @@ header {
 
 .img-box {
     padding-top: 25px;
-    height:75vh;
+    height:60vh;
     background: url('./img/wlc-bg.jpeg');
     background-size: cover;
     background-position: center;
@@ -575,6 +585,46 @@ footer {
 }
 
   
+
+/* ! COMPANY PAGE ############# */
+
+.img-box-company {
+    background: url('./img/img-company/company-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 55vh;
+}
+.company-page {
+    width:70%;
+    padding: 50px;
+}
+
+.company-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 50px;
+}
+
+.person-details > img {
+    width:20em;
+}
+
+.person-name {
+    padding:10px;
+    font-size: 32px;
+}
+
+.person-position {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+
+
 /* TODO MEDIA BREAKPOINTS */
 
  @media screen and (max-width: 480px) {
@@ -692,14 +742,6 @@ footer {
     background: #fcfcfc;
 }
 
-
-
-/* HIDE IG */
-
-.follow-ig {
-    display: none;
-}
-
 /* FOOTER FLEX */
 
 .flex-box {
@@ -743,5 +785,10 @@ footer {
 
 .portfolio-title > p {
     font-size: 12px;
+}
+
+
+.company-wrapper {
+    grid-template-columns: 1fr;
 }
 }
